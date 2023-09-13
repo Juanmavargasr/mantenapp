@@ -45,7 +45,12 @@ function LoginPage() {
             <p className="text-red-500">password is required</p>
           )}
 
-          <button type="submit">Login</button>
+          <button
+            type="submit"
+            className="bg-sky-500 text-white px-4 py-2 rounded-md my-2"
+          >
+            Login
+          </button>
         </form>
         {signinErrors.map((error, i) => (
           <div className="bg-red-500 p-2 text-white text-center my-2" key={i}>
